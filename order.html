@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order - PircBelfort</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showQR() {
+            document.getElementById("qr-section").style.display = "block";
+        }
+    </script>
 </head>
 <body>
 
     <header>
-        <h1>PircBelfort</h1>
+        <h1>PircBelfort - Order Now</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,13 +27,18 @@
 
     <main>
         <h2>Place Your Order</h2>
-        <p>Pay $10 to get your website designed!</p>
-        <a href="YOUR_UPI_PAYMENT_LINK" class="btn">Pay Now</a>
+        <p>Click the button below to make a payment of ₹830.</p>
+        
+        <!-- Pay Now Button -->
+        <button onclick="showQR()">Pay Now</button>
+
+        <!-- Hidden QR Code Section -->
+        <div id="qr-section" style="display: none; margin-top: 20px;">
+            <h3>Scan this QR Code to Pay</h3>
+            <img src="images/qr.google.pay" alt="UPI QR Code" width="250">
+            <p>After payment, send a confirmation email to <strong>runtyjudge74@gmail.com</strong></p>
+        </div>
     </main>
-<h2>Pay ₹830 via UPI</h2>
-<p>Scan the QR code below to make the payment:</p>
-<img src="upi.google.pay" alt="UPI QR Code" width="250">
-<p>After payment, send the screenshot to <b>runtyjudge74@gmail.com</b></p>
 
 </body>
 </html>
